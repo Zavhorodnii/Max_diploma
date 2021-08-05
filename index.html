@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diplom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="mask"></div>
+</div>
+<div class="choose">
+    <h2>
+        ЧНУ-ФКН-Кафедра ІІС-ОП 122 Комп'ютерні науки (Бакалавр) - Система вибору студентами освітніх компонентів на основі групового ранжування
+    </h2>
+    <button class="reg-btn" id="log-in">Вхід в аккаунт</button>
+    <button class="reg-btn" id="sing-in">Створити аккаунт</button>
+
+    <form class="log-in js_get_info">
+        <input type="text" class="input js_full_name" placeholder="ФІО">
+        <input type="text" class="input js_password" placeholder="Пароль">
+        <input type="text" class="input js_student_id" placeholder="студентський квиток">
+        <span class="js_error_login"></span>
+        <div>
+            <button type="submit" class="reg-btn js_login">Вхід</button>
+        </div>
+    </form>
+    <form class="sing-in js_get_info">
+        <input type="text" class="input js_full_name" placeholder="ПІБ">
+        <input type="text" class="input js_password" placeholder="пароль">
+        <span class="js_error_repeat_password"></span>
+        <input type="text" class="input js_repeat_password" placeholder="повторити пароль">
+        <span class="js_error_student_id"></span>
+        <input type="text" class="input js_student_id" placeholder="студентський квиток">
+        <span class="js_error_group"></span>
+        <input type="text" class="input js_group" placeholder="група">
+        <span class="js_success_create_account"></span>
+        <div>
+            <button type="submit" class="reg-btn js_register">Регістрація</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="common.js"></script>
+</body>
+</html>
